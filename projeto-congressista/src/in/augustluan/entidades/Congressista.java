@@ -30,6 +30,8 @@ public class Congressista {
         this.cpf = cpf;
     }
 
+    // verifica se o obj e um Congressista e se possui o mesmo nome que o
+    // obj que foi inserido como exemplar de busca
     public boolean equals(Object o) {
         if ((o instanceof Congressista) &&
                 ((Congressista) o).getNome().equals(this.getNome())) {
