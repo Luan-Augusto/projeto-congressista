@@ -35,6 +35,8 @@ public class Congressista {
     public boolean equals(Object o) {
         if ((o instanceof Congressista) &&
                 ((Congressista) o).getNome().equals(this.getNome())) {
+                // se encontrar o slot, usa o metohd equals() p/ cada obj no slot em busca
+                // do obj que procurarmos
             return true;
         }
         return false;
