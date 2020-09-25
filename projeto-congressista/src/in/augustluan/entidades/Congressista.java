@@ -1,5 +1,7 @@
 package in.augustluan.entidades;
 
+import java.util.HashMap;
+
 public class Congressista {
     /*
     um cliente solicita que em seu congresso, alem do cadastro comum, seja criado em paralelo
@@ -7,9 +9,9 @@ public class Congressista {
     paraseu posicionamento em uma tabela hashing.
      */
     private String nome;
-    private String cpf;
+    private int cpf;
 
-    public Congressista(String nome, String cpf) {
+    public Congressista(String nome, int cpf) {
         this.nome = nome;
         this.cpf = cpf;
     }
@@ -18,7 +20,7 @@ public class Congressista {
         return nome;
     }
 
-    public String getCpf() {
+    public int getCpf() {
         return cpf;
     }
 
@@ -26,7 +28,7 @@ public class Congressista {
         this.nome = nome;
     }
 
-    public void setCpf(String cpf) {
+    public void setCpf(int cpf) {
         this.cpf = cpf;
     }
 
@@ -35,8 +37,8 @@ public class Congressista {
     public boolean equals(Object o) {
         if ((o instanceof Congressista) &&
                 ((Congressista) o).getNome().equals(this.getNome())) {
-                // se encontrar o slot, usa o metohd equals() p/ cada obj no slot em busca
-                // do obj que procurarmos
+            // se encontrar o slot, usa o metohd equals() p/ cada obj no slot em busca
+            // do obj que procurarmos
             return true;
         }
         return false;
