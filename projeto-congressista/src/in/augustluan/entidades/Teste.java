@@ -15,6 +15,14 @@ public abstract class Teste {
         hash.put(cong1, "Informacao importante sobre " + cong1);
         hash.put(cong2, "Informacao importante sobre " + cong2);
 
-        
+        /*
+        sera criado agr uma nova instancia que efetuara uma busca nos slots
+        afim de encontra-lo
+
+        o valor devolvido tera de ser false
+         */
+        Congressista cong3 = new Congressista("Sicrano", 9288293);
+        System.out.println(hash.containsKey(cong3));
+
     }
 }
