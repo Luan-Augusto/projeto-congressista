@@ -48,4 +48,9 @@ public class Congressista {
         // algoritmo de criacao de hashing aqui
         return getNome().length() * 8;
     }
+
+    @Override
+    public String toString() {
+        return   nome;
+    }
 }

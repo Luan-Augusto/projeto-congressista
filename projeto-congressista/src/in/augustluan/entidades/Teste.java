@@ -24,8 +24,12 @@ public abstract class Teste {
         Congressista cong3 = new Congressista("Sicrano", 9288293);
         System.out.println(hash.containsKey(cong3)); // false
 
+        // verifica se existem esses caras
         System.out.println(hash.containsKey(cong1));
         System.out.println(hash.containsKey(cong2));
 
+        // agr irei fzr com que pesquise aos obj que ja existem junto a suas informacoes
+        String info = hash.get(cong1);
+        System.out.println(info);
     }
 }
