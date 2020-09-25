@@ -30,6 +30,14 @@ public class Congressista {
         this.cpf = cpf;
     }
 
+    public boolean equals(Object o) {
+        if ((o instanceof Congressista) &&
+                ((Congressista) o).getNome().equals(this.getNome())) {
+            return true;
+        }
+        return false;
+    }
+
     public int hashCode() {
         // algoritmo de criacao de hashing aqui
         return getNome().length() * 8;
