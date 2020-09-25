@@ -1,12 +1,32 @@
 package in.augustluan.entidades;
 
-public class Congressista extends Pessoa {
+public class Congressista {
 
-	public Congressista(String nome, String cpf) {
-		super(nome, cpf);
-	}
+    private String nome;
+    private String cpf;
 
-	public int hashCode() {
-		return getNome().length() * 8;
-	}
+    public Congressista(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public int hashCode() {
+        return getNome().length() * 8;
+    }
 }
