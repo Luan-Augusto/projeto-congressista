@@ -22,7 +22,10 @@ public abstract class Teste {
         o valor devolvido tera de ser false
          */
         Congressista cong3 = new Congressista("Sicrano", 9288293);
-        System.out.println(hash.containsKey(cong3));
+        System.out.println(hash.containsKey(cong3)); // false
+
+        System.out.println(hash.containsKey(cong1));
+        System.out.println(hash.containsKey(cong2));
 
     }
 }
