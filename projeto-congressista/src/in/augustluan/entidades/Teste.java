@@ -31,5 +31,6 @@ public abstract class Teste {
         // agr irei fzr com que pesquise aos obj que ja existem junto a suas informacoes
         String info = hash.get(cong1);
         System.out.println(info);
+
     }
 }

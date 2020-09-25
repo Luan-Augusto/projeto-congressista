@@ -45,7 +45,7 @@ public class Congressista {
     }
 
     public int hashCode() {
-        // algoritmo de criacao de hashing aqui
+        // algoritmo para calcular o hashing
         return getNome().length() * 8;
     }
 
